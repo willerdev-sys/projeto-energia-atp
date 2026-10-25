@@ -1,7 +1,7 @@
 ﻿//Integrantes do Grupo: Willer Luiz da Silva Lopes | Fabio - ADS - 2026/2
 
-int quantDias, i, DiaConsMaior = 0, DiaConsMenor = 0;
-double ConsumoTotal = 0, MediaDiaria, MaiorConsumo = int.MinValue, MenorConsumo = int.MinValue;
+int quantDias, i, DiasAcimaMed = 0, DiasAbaixoMed = 0;
+double ConsumoTotal = 0, MediaDiaria, MaiorConsumo = int.MinValue, MenorConsumo = int.MaxValue;
 double[]Consumo;
 
 //Sistema para validar se a quantidade de dias informado pelo usuario está fora ou dentro do intervalo
@@ -30,17 +30,53 @@ Console.WriteLine("O consumo total foi de " + ConsumoTotal + " kWh"); //Apresent
 MediaDiaria = (ConsumoTotal/quantDias);
 Console.WriteLine("O consumo médio díario é de: " + MediaDiaria + " kWh"); //Media diaria de consumo
 
-for (i=0; i < Consumo.Length; i++)
+//Condições para achar o maior consumo registrado e o dia em que ele ocorreu
+
+for (i=0; i < Consumo.Length; i++)//Repetição para descobrir os maiores consumos de energia
 {
     if(Consumo[i]>MaiorConsumo || Consumo[i]==MaiorConsumo)
     {
         MaiorConsumo = Consumo[i];
     }
 }
-for (i=0; i < Consumo.Length; i++)
+for (i=0; i < Consumo.Length; i++)//Repetição para descobrir os dias de maiores consumos de energia
 {
     if(MaiorConsumo == Consumo[i])
     {
         Console.WriteLine($"O maior consumo registrado foi de: " + Consumo[i] + " kWh" + " e aconteceu no dia " + (i+1));
     }
 }
+
+//Condições para achar o menor consumo registrado e o dia em que ele ocorreu
+
+for (i=0; i < Consumo.Length; i++)//Repetição para descobrir os menores consumos de energia
+{
+    if(Consumo[i] < MenorConsumo || Consumo[i]==MenorConsumo)
+    {
+        MenorConsumo = Consumo[i];
+    }
+}
+for (i=0; i < Consumo.Length; i++)//Repetição para descobrir os dias de menores consumos de energia
+{
+    if(MenorConsumo == Consumo[i])
+    {
+        Console.WriteLine($"O menor consumo registrado foi de: " + Consumo[i] + " kWh" + " e aconteceu no dia " + (i+1));
+    }
+}
+
+//Quantidade de dias cujo consumo ficou acima e abaixo da média do período;
+for(i=0; i < Consumo.Length; i++)
+{
+    if(Consumo[i] > MediaDiaria)
+    {
+        DiasAcimaMed++;
+    }
+    else if (Consumo[i] < MediaDiaria)
+    {
+        DiasAbaixoMed++;
+    }
+}
+
+Console.WriteLine("Dos dias informados ficaram " + DiasAcimaMed + " dias acima da Média do período");
+Console.WriteLine("Dos dias informados ficaram " + DiasAbaixoMed + " dias abaixo da Média do período");
+
