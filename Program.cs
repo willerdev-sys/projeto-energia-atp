@@ -80,3 +80,18 @@ for(i=0; i < Consumo.Length; i++)
 Console.WriteLine("Dos dias informados ficaram " + DiasAcimaMed + " dias acima da Média do período");
 Console.WriteLine("Dos dias informados ficaram " + DiasAbaixoMed + " dias abaixo da Média do período");
 
+for (i=0; i<Consumo.Length; i++)
+{
+    if(Consumo[i] < MediaDiaria * 0.8)
+    {
+        Console.WriteLine($"No dia {i+1}/{quantDias} o consumo foi de {Consumo[i]} kWh e possui: Baixo consumo de energia");
+    }
+    else if (Consumo[i] >= MediaDiaria * 0.8 && Consumo[i] <= MediaDiaria * 1.2)
+    {
+        Console.WriteLine($"No dia {i+1}/{quantDias} o consumo foi de {Consumo[i]} kWh e possui: Consumo normal de energia");
+    }
+    else
+    {
+        Console.WriteLine($"No dia {i+1}/{quantDias} o consumo foi de {Consumo[i]} kWh e possui: Alto consumo de energia");
+    }
+}
