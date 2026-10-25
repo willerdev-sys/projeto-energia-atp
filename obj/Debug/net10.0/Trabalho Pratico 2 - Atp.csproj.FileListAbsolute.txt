@@ -1,0 +1,15 @@
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\bin\Debug\net10.0\Trabalho Pratico 2 - Atp.exe
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\bin\Debug\net10.0\Trabalho Pratico 2 - Atp.deps.json
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\bin\Debug\net10.0\Trabalho Pratico 2 - Atp.runtimeconfig.json
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\bin\Debug\net10.0\Trabalho Pratico 2 - Atp.dll
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\bin\Debug\net10.0\Trabalho Pratico 2 - Atp.pdb
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.AssemblyInfoInputs.cache
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.AssemblyInfo.cs
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.csproj.CoreCompileInputs.cache
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.sourcelink.json
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.dll
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\refint\Trabalho Pratico 2 - Atp.dll
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.pdb
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\Trabalho Pratico 2 - Atp.genruntimeconfig.cache
+C:\Users\Will\Desktop\PUCMINAS-ADS\ATP\Trabalho Pratico 2 - Atp\obj\Debug\net10.0\ref\Trabalho Pratico 2 - Atp.dll
