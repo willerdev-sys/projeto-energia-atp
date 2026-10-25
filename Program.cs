@@ -1,8 +1,8 @@
 ﻿//Integrantes do Grupo: Willer Luiz da Silva Lopes | Fabio - ADS - 2026/2
 
-int quantDias, i, DiasAcimaMed = 0, DiasAbaixoMed = 0;
-double ConsumoTotal = 0, MediaDiaria, MaiorConsumo = int.MinValue, MenorConsumo = int.MaxValue;
-double[]Consumo;
+int quantDias, i, DiasAcimaMed = 0, DiasAbaixoMed = 0, DiasAltoCons = 0;
+double ConsumoTotal = 0, MediaDiaria, MaiorConsumo = int.MinValue, MenorConsumo = int.MaxValue, PercEsperado;
+double[]Consumo, NovoConsumo;
 
 //Sistema para validar se a quantidade de dias informado pelo usuario está fora ou dentro do intervalo
 do
@@ -93,5 +93,14 @@ for (i=0; i<Consumo.Length; i++)
     else
     {
         Console.WriteLine($"No dia {i+1}/{quantDias} o consumo foi de {Consumo[i]} kWh e possui: Alto consumo de energia");
+        DiasAltoCons++;
     }
 }
+
+do
+{
+    Console.WriteLine($"Infome o valor percentual de redução esperado para os dias classificados como de alto consumo");
+    PercEsperado = double.Parse(Console.ReadLine());
+}while(PercEsperado < 0 || PercEsperado > 50);
+
+NovoConsumo = new double[quantDias];
